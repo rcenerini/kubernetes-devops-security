@@ -84,6 +84,8 @@
 				   </outputFormats>
 				</configuration>
 			 </plugin>
+			 <!--                   Dependency Check                  -->
+
 		</plugins>
 	</build>
 
