@@ -27,16 +27,15 @@ pipeline {
   //      sh "mvn sonar:sonar -Dsonar.projectKey=jenkins-application -Dsonar.host.url=http://192.168.15.18:9000 -Dsonar.login=feb2cf1e5aaa10aad3c2e6a3ff739b35aeb2aa72"
   //    }
   //  }  
-    stage('Vulnerability Scan - Docker') {
+    stage('Vulnerability Scan - Docker ') {
       steps {
-        parallel(
-          "Dependency Scan": {
-            sh "mvn dependency-check:check"
-          },
-          "Trivy Scan": {
-            sh "bash trivy-docker-image-scan.sh"
-          }
-        )
+        sh "mvn dependency-check:check"
+      }
+    }
+
+    stage('TRIVY Scan2 - Docker2 ') {
+      steps {
+        sh "bash trivy-docker-image-scan.sh"
       }
     }
     
