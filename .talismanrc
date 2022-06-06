@@ -1,6 +1,6 @@
 fileignoreconfig:
 - filename: Jenkinsfile
-  checksum: 8af7c41abe3fe979c2d291a0d9e25d9c80834243b1ba9da68d1e47174ae4c41f
+  checksum: 908d89e53c247414c71e66f6a13654f9b1362c68dd46b6283c3a1e9a92246edc
 - filename: Jenkinsfile
   allowed_patterns: [key]
 allowed_patterns:
