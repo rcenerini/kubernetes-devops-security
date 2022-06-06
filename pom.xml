@@ -88,14 +88,11 @@
 			 <plugin>
 				<groupId>org.owasp</groupId>
 				<artifactId>dependency-check-maven</artifactId>
-				<version>7.1.0</version>
-				<executions>
-					<execution>
-						<goals>
-							<goal>check</goal>
-						</goals>
-					</execution>
-				</executions>
+				<version>6.1.6</version>
+				<configuration>
+					<format>ALL</format>
+					<failBuildOnCVSS>5</failBuildOnCVSS>
+				</configuration>
 			  </plugin>
 		</plugins>
 	</build>
